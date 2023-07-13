@@ -35,6 +35,8 @@ class CalcViewController: UIViewController {
         button2.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
         button3.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
         button4.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
+        
+
     }
     
     @objc func onButton(_ sender:UIButton){
@@ -64,6 +66,8 @@ class CalcViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nextVC = segue.destination as! ResultViewController
         nextVC.point = point
+
+        
     }
     
     func makeNewQuestion(){

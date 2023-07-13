@@ -195,6 +195,12 @@
                                     <action selector="onBackTop:" destination="98U-q7-SER" eventType="touchUpInside" id="9vK-4J-NCy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これまでの最高記録 0p" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKn-lY-Se2">
+                                <rect key="frame" x="59.666666666666657" y="601.66666666666663" width="273.66666666666674" height="31.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9By-Fs-VHl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -202,13 +208,16 @@
                             <constraint firstItem="9By-Fs-VHl" firstAttribute="bottom" secondItem="tsj-wH-fyW" secondAttribute="bottom" constant="50" id="E6A-FT-btD"/>
                             <constraint firstItem="O9o-IE-oON" firstAttribute="top" secondItem="9By-Fs-VHl" secondAttribute="top" constant="100" id="LuD-0a-Gvg"/>
                             <constraint firstItem="1SB-qW-naH" firstAttribute="centerX" secondItem="y8c-RZ-Cph" secondAttribute="centerX" id="X9n-5U-kfz"/>
+                            <constraint firstItem="eKn-lY-Se2" firstAttribute="centerX" secondItem="y8c-RZ-Cph" secondAttribute="centerX" id="XlT-ki-bA8"/>
                             <constraint firstItem="1SB-qW-naH" firstAttribute="centerY" secondItem="y8c-RZ-Cph" secondAttribute="centerY" id="cxN-it-pFt"/>
                             <constraint firstItem="O9o-IE-oON" firstAttribute="centerX" secondItem="y8c-RZ-Cph" secondAttribute="centerX" id="gQP-Si-lu9"/>
                             <constraint firstItem="tsj-wH-fyW" firstAttribute="centerX" secondItem="y8c-RZ-Cph" secondAttribute="centerX" id="qbn-82-yw4"/>
+                            <constraint firstItem="tsj-wH-fyW" firstAttribute="top" secondItem="eKn-lY-Se2" secondAttribute="bottom" constant="100" id="reu-KV-FXN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c6F-8t-d0a"/>
                     <connections>
+                        <outlet property="maxpoint" destination="eKn-lY-Se2" id="uq4-pn-4Zh"/>
                         <outlet property="recordLabel" destination="1SB-qW-naH" id="dsH-nO-HDE"/>
                     </connections>
                 </viewController>
